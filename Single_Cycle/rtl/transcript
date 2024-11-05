@@ -1,0 +1,115 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 linux_x86_64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# OpenFile riscv_top_tb.sv
+vsim -voptargs=+acc work.riscv_top_tb
+# vsim -voptargs="+acc" work.riscv_top_tb 
+# Start time: 11:14:58 on Nov 04,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.riscv_top_tb(fast)
+# Loading work.riscv_pkg(fast)
+# Loading work.riscv_top(fast)
+# Loading work.riscv_core(fast)
+# Loading work.reg_file(fast)
+# Loading work.control_unit(fast)
+# Loading work.instr_memory(fast)
+# Loading work.data_memory(fast)
+# Loading work.mem_access_control(fast)
+add wave -position end  sim:/riscv_top_tb/clk
+add wave -position end  sim:/riscv_top_tb/rst_n
+add wave -position end  sim:/riscv_top_tb/dut/core/instruction
+add wave -position end  sim:/riscv_top_tb/dut/core/pc_current
+add wave -position end  sim:/riscv_top_tb/dut/dmem/mem
+add wave -position end  sim:/riscv_top_tb/dut/core/reg_file_inst/registers
+run -all
+# ** Note: $finish    : riscv_top_tb.sv(22)
+#    Time: 515 ns  Iteration: 0  Instance: /riscv_top_tb
+# 1
+# Break in Module riscv_top_tb at riscv_top_tb.sv line 22
+add wave -position end  sim:/riscv_top_tb/dut/dmem/be
+add wave -position end  sim:/riscv_top_tb/dut/dmem/addr
+add wave -position end  sim:/riscv_top_tb/dut/dmem/wdata
+add wave -position end  sim:/riscv_top_tb/dut/dmem/we
+add wave -position end  sim:/riscv_top_tb/dut/dmem/be
+add wave -position end  sim:/riscv_top_tb/dut/dmem/rdata
+add wave -position end  sim:/riscv_top_tb/dut/dmem/mem
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.riscv_top_tb(fast)
+# Loading work.riscv_pkg(fast)
+# Loading work.riscv_top(fast)
+# Loading work.riscv_core(fast)
+# Loading work.reg_file(fast)
+# Loading work.control_unit(fast)
+# Loading work.instr_memory(fast)
+# Loading work.data_memory(fast)
+# Loading work.mem_access_control(fast)
+run -all
+# ** Note: $finish    : riscv_top_tb.sv(22)
+#    Time: 515 ns  Iteration: 0  Instance: /riscv_top_tb
+# 1
+# Break in Module riscv_top_tb at riscv_top_tb.sv line 22
+add wave -position end  sim:/riscv_top_tb/dut/core/alu_operand_a
+add wave -position end  sim:/riscv_top_tb/dut/core/alu_operand_b
+add wave -position end  sim:/riscv_top_tb/dut/core/alu_result
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.riscv_top_tb(fast)
+# Loading work.riscv_pkg(fast)
+# Loading work.riscv_top(fast)
+# Loading work.riscv_core(fast)
+# Loading work.reg_file(fast)
+# Loading work.control_unit(fast)
+# Loading work.instr_memory(fast)
+# Loading work.data_memory(fast)
+# Loading work.mem_access_control(fast)
+run -all
+# ** Note: $finish    : riscv_top_tb.sv(22)
+#    Time: 515 ns  Iteration: 0  Instance: /riscv_top_tb
+# 1
+# Break in Module riscv_top_tb at riscv_top_tb.sv line 22
+add wave -position end  sim:/riscv_top_tb/dut/core/imm
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.riscv_top_tb(fast)
+# Loading work.riscv_pkg(fast)
+# Loading work.riscv_top(fast)
+# Loading work.riscv_core(fast)
+# Loading work.reg_file(fast)
+# Loading work.control_unit(fast)
+# Loading work.instr_memory(fast)
+# Loading work.data_memory(fast)
+# Loading work.mem_access_control(fast)
+run -all
+# ** Note: $finish    : riscv_top_tb.sv(22)
+#    Time: 515 ns  Iteration: 0  Instance: /riscv_top_tb
+# 1
+# Break in Module riscv_top_tb at riscv_top_tb.sv line 22
+# Causality operation skipped due to absence of debug database file
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+quit
+# End time: 11:41:14 on Nov 04,2024, Elapsed time: 0:26:16
+# Errors: 0, Warnings: 1
