@@ -16,7 +16,7 @@ The goal of this project is to design and implement a basic RISC-V 32I processor
 
 ## Project Structure
 ### RTL Block Diagram
-![Router RTL Architecture](arch.jpeg)
+![Router RTL Architecture](arch.png)
 
 ```
 Single_Cycle/
