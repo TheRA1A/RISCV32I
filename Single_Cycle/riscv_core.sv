@@ -18,19 +18,6 @@ module riscv_core
     // output logic [ 3:0] data_be
 );
 
-  typedef enum logic [3:0] {
-    ALU_ADD,   // Addition
-    ALU_SUB,   // Subtraction
-    ALU_SLL,   // Shift Left Logical
-    ALU_SLT,   // Set Less Than
-    ALU_SLTU,  // Set Less Than Unsigned
-    ALU_XOR,   // Exclusive OR
-    ALU_SRL,   // Shift Right Logical
-    ALU_SRA,   // Shift Right Arithmetic
-    ALU_OR,    // OR
-    ALU_AND    // AND
-  } alu_op_t;
-
   // Internal Signals
   logic [31:0] pc_current;
   logic [31:0] pc_next;

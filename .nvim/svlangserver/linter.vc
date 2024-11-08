@@ -1,0 +1,6 @@
+-v /home/raja/Desktop/MAVEN/PROJECTS/RISC_V/Multi_Cycle/riscv_pkg.sv
+-v /home/raja/Desktop/MAVEN/PROJECTS/RISC_V/Single_Cycle/riscv_pkg.sv
++incdir+/home/raja/Desktop/MAVEN/PROJECTS/RISC_V/Multi_Cycle
++incdir+/home/raja/Desktop/MAVEN/PROJECTS/RISC_V/Single_Cycle
++incdir+/home/raja/Desktop/MAVEN/PROJECTS/RISC_V/Multi_Cycle
++incdir+/home/raja/Desktop/MAVEN/PROJECTS/RISC_V/Single_Cycle

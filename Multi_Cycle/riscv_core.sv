@@ -126,6 +126,8 @@ module riscv_core
       end else begin
         if_id_reg <= if_id_next;
       end
+    end else begin
+      if_id_reg <= if_id_reg;
     end
   end
 
@@ -355,8 +357,8 @@ module riscv_core
   hazard_detection_unit hazard_unit (
       .id_ex_mem_read(id_ex_reg.ctrl.mem_read),
       .id_ex_rd_addr(id_ex_reg.rd_addr),
-      .if_id_rs1_addr(instruction[19:15]),
-      .if_id_rs2_addr(instruction[24:20]),
+      .if_id_rs1_addr(rs1),
+      .if_id_rs2_addr(rs2),
       .branch_taken(branch_taken),
       .stall_if(stall_if),
       .stall_id(stall_id),
